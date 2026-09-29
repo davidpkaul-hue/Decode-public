@@ -1,0 +1,29 @@
+# Rules for the public repository. The derived result tables under
+# data/processed are part of the publication and are deliberately tracked.
+
+# Never any primary data
+*.idat
+*.rds
+*.RData
+*.Rda
+data/raw/
+data/external/
+
+# Local identifier map, must never be published
+.public_id_map.csv
+
+# R working files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+
+# Build products
+manuscript/*.docx
+!manuscript/reference_black.docx
+Rplots.pdf
+
+# System
+.DS_Store
+Thumbs.db
